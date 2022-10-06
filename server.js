@@ -6,7 +6,7 @@ import tuitsController from "./controllers/tuits-controller.js";
 import cors from 'cors';
 
 const CONNECTION_STRING = process.env.DB_CONNECTION_STRING || 'mongodb://localhost:27017/fsd'
-console.log(CONNECTION_STRING);
+//console.log(CONNECTION_STRING);
 //const express = require('express');
 mongoose.connect(CONNECTION_STRING);
 const app = express();
