@@ -9,6 +9,7 @@ const CONNECTION_STRING = process.env.DB_CONNECTION_STRING || 'mongodb://localho
 //console.log(CONNECTION_STRING);
 //const express = require('express');
 mongoose.connect(CONNECTION_STRING);
+console.log("made it here");
 const app = express();
 app.use(cors());
 app.use(express.json());
